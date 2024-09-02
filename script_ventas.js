@@ -43,7 +43,7 @@ const calcular     = document.getElementById("calcular").value;
 
     descuento1 = ( cantidad  * descuento_precio)  / 100;
              
-    impuesto = iva1 * operacion_ganancia2;
+    impuesto = iva2 * operacion_ganancia2;
     //venta = precio_finalisimo - impuesto;
     operacion_precio_final = (operacion_ganancia2 - impuesto - descuento1).toFixed(2);
     resultado.textContent = `El Precio de ${producto} es: ${operacion_precio_final}$`;
