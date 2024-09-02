@@ -46,5 +46,5 @@ const calcular     = document.getElementById("calcular").value;
     
     //venta = precio_finalisimo - impuesto;
     operacion_precio_final = (operacion_ganancia2).toFixed(2);
-    resultado.textContent = `El Precio de ${producto} es: ${operacion_precio_final}$`;
+    resultado.textContent = `El Precio de ${producto} es: ${operacion_ganancia2}$`;
     }
