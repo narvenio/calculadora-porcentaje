@@ -13,7 +13,7 @@ const calcular     = document.getElementById("calcular").value;
     let cantidades = Number(cantidad_producto.value);
     let precio_inicial = Number(precio.value);
     let ganancia = Number(ganancia_esperada.value);
-    let descuento_precio = Number(descuento.value);
+    
     let iva1 = Number(iva.value);
     let iva2 = iva1 / 100;
 
@@ -42,11 +42,13 @@ const calcular     = document.getElementById("calcular").value;
     operacion_ganancia2 = cantidad  + aumento;
 
     descuento1 = ( cantidad  * descuento_precio)  / 100;
+     let precio_final_individual
              
     
     //venta = precio_finalisimo - impuesto;
     operacion_precio_final = (operacion_ganancia2).toFixed(2);
-    let precio_final_individual = operacion_precio_final / cantidad;
+    precio_final_individual = operacion_precio_final / cantidad;
     resultado.textContent = `El Precio de ${producto} es: ${operacion_precio_final}$`;
+     resultado.textContent = `El Precio de ${producto} es: ${precio_final_individual}$`;
     }
 }
