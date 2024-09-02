@@ -15,7 +15,7 @@ const calcular     = document.getElementById("calcular").value;
     let ganancia = Number(ganancia_esperada.value);
     let descuento_precio = Number(descuento.value);
     let iva1 = Number(iva.value);
-    iva1 = iva1 / 100;
+    let iva2 = iva1 / 100;
 
     if (producto == "" || cantidades == "" || precio_inicial == "" || ganancia == "" || iva == ""){
         resultado.textContent = "Rellene Todos los Campos";
