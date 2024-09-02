@@ -80,7 +80,7 @@ function calcular_precio_caido(){
     resultado.textContent = `El Precio Decayo un ${porcentaje}%`;
      
 }
-    
+}
     
                 
         
